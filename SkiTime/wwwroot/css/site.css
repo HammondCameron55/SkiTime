@@ -1,0 +1,45 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.top-banner {
+    /* Example style for the top banner */
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%; /* Make the image stretch to fill the container */
+    display: block; /* This removes any extra space below the image */
+}
+
+.container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+    .container img, .container p {
+        flex: 1; /* Allow both the image and paragraph to grow and fill the container */
+        margin: 10px; /* Add some space around the elements */
+    }
