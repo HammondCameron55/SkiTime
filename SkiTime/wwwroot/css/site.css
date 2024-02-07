@@ -39,7 +39,36 @@ body {
     justify-content: center; /* Center items horizontally */
 }
 
-    .container img, .container p {
+.container img, .container p {
         flex: 1; /* Allow both the image and paragraph to grow and fill the container */
         margin: 10px; /* Add some space around the elements */
     }
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some padding */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content */
+}
+
+.social-links {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: inline-flex; /* Display links in a row */
+    justify-content: center; /* Center the links */
+    gap: 10px; /* Add space between links */
+}
+
+.social-links li a {
+    color: #fff; /* White text color for links */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+.social-links li a:hover {
+    text-decoration: underline; /* Underline links on hover for better UX */
+        }
