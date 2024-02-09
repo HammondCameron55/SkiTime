@@ -1,6 +1,22 @@
 ﻿@{
-    ViewData["Title"] = "Calculator";
+    ViewData["Title"] = "Ski Lesson Calculator";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>This is where I will store the calculator</p>
+<div class="container mt-5">
+    <h1 class="text-center">@ViewData["Title"]</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-6 offset-md-3">
+            <p>Want to learn how to ski? This could be us!</p>
+            <img src="~/img/SkiWFam.jpg" alt="Ski instructor with a student on a snowy slope" class="img-fluid rounded mb-3">
+            <p>I charge <strong>$55</strong> dollars per hour of ski instruction.</p>
+            <label for="positiveIntegerInput" class="form-label">Please enter how many hours you would like me to teach you how to ski:</label>
+            <div class="input-group mb-3">
+                <input type="number" id="positiveIntegerInput" name="positiveIntegerInput" class="form-control" min="1" step="1" placeholder="Number of hours">
+                <button type="button" id="calculateButton" class="btn btn-primary">Calculate</button>
+            </div>
+            <p>It will cost you: <span id="resultBox" class="fw-bold"></span> dollars for that amount of instruction.</p>
+        </div>
+    </div>
+</div>
+
